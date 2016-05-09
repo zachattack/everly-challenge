@@ -1,0 +1,44 @@
+// My custom color ch-ch-ch-changes.
+
+// Le Defaults
+.jumbotron {
+  transition: all 0.3s ease 0s;
+}
+
+#user-list {
+  padding-left: 0;
+  display: inline-block;
+  li {
+    padding: .35em .5em;
+    border-bottom: 1px solid lightgray;
+    list-style: none;
+    margin-left: 0;
+    &:nth-child(1) {
+      border-top: 1px solid lightgray;
+    }
+  }
+}
+
+// Small devices
+@media (min-width: $screen-sm-min) {
+  .jumbotron {
+    background-color: coral;
+  }
+}
+
+// Medium devices
+@media (min-width: $screen-md-min) {
+  .jumbotron {
+    background-color: lightgreen;
+  }
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) {
+  .jumbotron {
+    background-color: purple;
+    color: white;
+  }
+
+}

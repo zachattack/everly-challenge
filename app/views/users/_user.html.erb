@@ -1,0 +1,4 @@
+<li id="<%= user.id %>">
+  <b class="lead"><%= user.name %></b>&nbsp;&nbsp;|&nbsp;&nbsp;
+  <%= link_to "Delete user", user_path(user), method: 'delete', remote: true, class: 'btn btn-sm btn-danger' %>
+</li>
